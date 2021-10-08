@@ -7,5 +7,5 @@ class Participant:
 
 @dataclass
 class Assignment:
-  santa: str
-  child: str
+  santa: Participant
+  child: Participant
