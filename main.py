@@ -3,13 +3,13 @@ sys.path.append(".")
 import secretSanta as santa
 
 # please modify as you see fit
-participants = "participants.csv"
+participantsInputPath = "participants.csv"
 ojSantaEmail = "natalie@natalienicole.dev"
 smtpHost = "mail.gandi.net"
 password = 'thisIsMySecretBro'
 
 
-participants = santa.getMembers(participants)
+participants = santa.getMembers(participantsInputPath)
 assignments = santa.assignChildren(participants)
 
 # santa is a slave to traditions, he checksTwice but he knows everything is in order.
